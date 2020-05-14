@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Збір інформації з метою створення динамічних посилань</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		</head>
+    <body>
+	<h1>INSERT - Введіть довідкову інформацію про себе</h1>
+		        <form action="user1_insert" class="form-group" method="POST">
+				<h2>Контактна інформація</h2>
+			  <div class="form-group">
+		<label for="exampleInput_first_name">Прізвище</label>
+		<input name="PRIZVISHE" type="text" class="form-control" required pattern="^[a-zA-Z]+$" placeholder="Draco">
+			</div>
+						<div class="form-group">
+		<label for="exampleInput_last_name">Ім'я</label>
+		<input name="IMYA" type="text"  class="form-control" required pattern="^[a-zA-Z]+$" placeholder="Ivan">
+			</div>
+						<div class="form-group">
+		<label for="exampleInput_last_name">Домашній телефон</label>
+		<input name="TELEFON" type="text" class="form-control" required pattern="^[0-9]{9,16}" placeholder="0975136233">
+			</div>
+									<div class="form-group">
+		<label for="exampleInput_last_name">Ваш Email</label>
+		<input input name="EMAIL" type="email" class="form-control" required placeholder="email@example.com" >
+			</div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+				        <form action="user2_insert" class="form-group" method="POST">
+				<h2>Інформація про ваш навчальний заклад</h2>
+			  <div class="form-group">
+		<label for="exampleInput_first_name">ВУЗ</label>
+		<input name="VYZ" type="text" class="form-control" required pattern="^[a-zA-Z]+$" placeholder="CHNY">
+			</div>
+						<div class="form-group">
+		<label for="exampleInput_last_name">Спеціальність</label>
+		<input name="SPECIALNIST" type="text"  class="form-control" required pattern="^[a-zA-Z]+$" placeholder="Zaborostroishik">
+			</div>
+						<div class="form-group">
+		<label for="exampleInput_last_name">Курс</label>
+		<input name="KURS" type="text" class="form-control" required pattern="^[0-9]{1,2}" placeholder="3">
+			</div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+		
+						        <form action="user3_insert" class="form-group" method="POST">
+				<h2>Ваші захоплення</h2>
+			  <p><input name="ZAHOPLENYA" type="radio" value="Pc-games" required="">Комп'ютерні ігри</p>
+			  <p><input name="ZAHOPLENYA" type="radio" value="Chess" required="">Шахи</p>
+			  <p><input name="ZAHOPLENYA" type="radio" value="Sport" required="">Спорт</p>
+			  <p><input name="ZAHOPLENYA" type="radio" value="Art" required="">Мистецтво</p>
+			   <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>
